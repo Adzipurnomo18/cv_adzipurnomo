@@ -6,13 +6,13 @@
 }
 
 
-header {
+header { 
   position: fixed; /* Fixes the header at the top */
   top: 0;
   left: 0;
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between; /* Adjusts elements on larger screens */
   align-items: center;
   padding: 20px;
   background-color: #fff;
@@ -20,38 +20,40 @@ header {
   z-index: 1000; /* Keeps the header on top of other elements */
 }
 
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column; /* Stack header items vertically */
+    align-items: flex-start; /* Align items to the left */
+    padding: 15px; /* Adjust padding for smaller screens */
+  }
+
+  header h1 {
+    font-size: 1.6em; /* Smaller title font size */
+    margin-bottom: 10px; /* Space between title and nav */
+  }
+
+  nav ul {
+    flex-direction: column; /* Stack navigation items vertically */
+    width: 100%; /* Make nav take full width */
+    padding-left: 0; /* Remove padding */
+    align-items: flex-start; /* Align nav items to the left */
+  }
+
+  nav ul li {
+    margin: 5px 0; /* Space between nav items */
+  }
+
+  /* Optional: Style active link */
+  nav ul li a.active {
+    font-weight: bold; /* Bold the active link for better visibility */
+    color: #007bff; /* Change color for active link */
+  }
+}
+
 body {
   margin-top: 80px; /* Adds space to prevent content from hiding behind the header */
 }
-
-
-
-header h1 span {
-  color: #00bfa5;
-}
-
-nav ul {
-  list-style: none;
-  display: flex;
-}
-
-nav ul li {
-  margin-left: 20px;
-}
-
-nav ul li a {
-  text-decoration: none;
-  color: #333;
-  font-weight: bold;
-}
-
-main {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 50px 20px;
-}
-
 
 .profile {
   display: flex;
