@@ -1,0 +1,544 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+header {
+  position: fixed; /* Fixes the header at the top */
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1000; /* Keeps the header on top of other elements */
+}
+
+body {
+  margin-top: 80px; /* Adds space to prevent content from hiding behind the header */
+}
+
+
+
+header h1 span {
+  color: #00bfa5;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav ul li {
+  margin-left: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 20px;
+}
+
+
+.profile {
+  display: flex;
+  flex-direction: column; /* Align items vertically */
+  background-color: rgba(0, 191, 165, 0.8); /* Fallback color */
+  background-image: url('https://cdn.pixabay.com/photo/2017/08/10/08/47/laptop-2620118_1280.jpg'); /* Replace with your image URL */
+  background-size: cover; /* Cover the entire card */
+  background-position: center; /* Center the image */
+  color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 30px;
+  width: 100%;
+  max-width: 800px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 0 auto;
+  align-items: center; /* Center content vertically */
+  justify-content: center; /* Center content horizontally */
+}
+
+
+.profile-image img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+/* Ensures the name text in .profile-details has a visible color */
+.profile-details h2 {
+  color: #ffffff; /* Set to white or any contrasting color */
+  font-size: 1.5em; /* Adjust size as needed */
+  margin-bottom: 10px;
+}
+
+
+.social-links {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+  justify-content: flex-start; /* Aligns items to the left */
+  margin-top: 10px;
+  padding-left: 0; /* Remove default padding */
+}
+
+
+.social-links li a {
+  color: #ffffff;
+  font-size: 1.5em;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.social-links li a:hover {
+  color: #f03c42; /* Change to your desired hover color */
+}
+
+
+.about-info {
+  display: flex;
+  gap: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  width: 100%;
+  max-width: 800px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
+.about {
+  flex: 1;
+  padding-right: 20px;
+}
+
+.about h3 {
+  margin-bottom: 10px;
+  font-size: 1.5em;
+}
+
+.about h3 span {
+  color: #00bfa5;
+}
+
+.about p {
+  color: #666;
+  line-height: 1.6;
+}
+
+.info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.info-item {
+  margin: 10px 0;
+}
+
+.info-item strong {
+  font-weight: bold;
+}
+
+.download-btn {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+  background-color: #f8f8f8; /* Fallback background color */
+  background-image: url('https://cdn.pixabay.com/photo/2020/02/22/17/53/communication-4871245_1280.jpg'); /* Replace with your image URL */
+  background-size: cover; /* Cover the entire viewport */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Prevent the background from repeating */
+  background-attachment: fixed; /* Keep the background fixed */
+  padding: 25px;
+}
+
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 20px;
+  max-width: 800px; /* Max width to limit expansion on large screens */
+  margin: 0 auto; /* Center the main content */
+  background-color: #fff; /* White background for contrast */
+  border-radius: 8px; /* Rounded corners for the main container */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
+}
+
+/* Header Styles */
+.header {
+  text-align: center;
+  margin-bottom: 30px; /* Space below the header */
+}
+
+.header h1 {
+  font-size: 2.5em; /* Larger font size for emphasis */
+  color: #00bfa5; /* Brand color */
+}
+
+.header p {
+  font-size: 1em;
+  color: #555; /* Dark gray for subtext */
+  margin: 5px 0; /* Spacing between lines */
+}
+
+/* Section Styles */
+section {
+  margin-bottom: 30px; /* Space between sections */
+}
+
+h2 {
+  font-size: 1.8em; /* Slightly larger heading size */
+  color: #00bfa5; /* Consistent heading color */
+  margin-bottom: 10px; /* Space below section headings */
+  border-bottom: 2px solid #00bfa5; /* Underline for emphasis */
+  padding-bottom: 5px; /* Padding below heading */
+}
+
+p {
+  line-height: 1.6; /* Improve readability */
+  color: #666; /* Softer text color */
+  margin-bottom: 15px; /* Space between paragraphs */
+}
+
+/* Lists */
+ul {
+  list-style-type: disc; /* Bullet points for lists */
+  margin-left: 20px; /* Indentation for lists */
+}
+
+/* Strong Tags */
+strong {
+  color: #333; /* Dark color for emphasis */
+}
+
+/* Skills Section */
+.skills p {
+  margin-bottom: 5px; /* Space between skills lines */
+}
+
+/* Button Styles */
+.download-btn {
+  background-color: #333; /* Dark background for contrast */
+  color: #fff; /* White text */
+  padding: 10px 20px; /* Padding for button size */
+  border: none; /* Remove border */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  font-weight: bold; /* Bold text */
+  margin-top: 20px; /* Space above button */
+  transition: background-color 0.3s; /* Smooth transition */
+}
+
+.download-btn:hover {
+  background-color: #00bfa5; /* Change color on hover */
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+
+  color: #333; /* Set text color to a darker shade for visibility */
+  margin-top: 40px;
+}
+
+/* Navigation Styles */
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav ul li {
+  margin-left: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  transition: color 0.3s ease, text-decoration 0.3s ease; /* Smooth transition for color and underline */
+}
+
+/* Hover Effect */
+nav ul li a:hover {
+  color: #00bfa5; /* Change to your desired hover color */
+  text-decoration: underline; /* Underline on hover */
+}
+
+
+/* Print Styles */
+@media print {
+  /* General Styles */
+  body {
+      color: #000;
+      background: none;
+      padding: 0;
+      margin: 0;
+      font-size: 12px; /* Standard font size for readability */
+      line-height: 1.4; /* Comfortable line height */
+  }
+
+  /* Main Content Layout */
+  main {
+      padding: 20px; /* Added padding around content */
+      margin: 0 auto;
+      width: 90%; /* Centered with some margin */
+      max-width: 800px; /* Limit maximum width */
+  }
+
+  /* Header and Footer */
+  header, footer {
+      display: none; /* Hide header and footer for print */
+  }
+
+  /* Section Titles */
+  h1 {
+      font-size: 1.5em; /* Larger font for main title */
+      text-align: center;
+      margin: 0 0 10px;
+  }
+
+  h2 {
+      font-size: 1.2em;
+      color: #000;
+      border-bottom: 1px solid #333;
+      margin: 15px 0 8px;
+      padding-bottom: 3px;
+  }
+
+  /* Section Content */
+  section {
+      margin: 10px 0; /* Consistent spacing between sections */
+  }
+
+  p, li {
+      font-size: 1em;
+      margin: 4px 0; /* Balanced spacing for readability */
+  }
+
+  /* Lists */
+  ul {
+      list-style-position: left;
+      margin: 0 0 8px 20px;
+      padding: 0;
+  }
+
+  /* Skills Section */
+  .skills p {
+      display: inline-block;
+      margin-right: 6px;
+      font-size: 0.9em;
+  }
+
+  /* Prevent Page Breaks Within Sections */
+  section {
+      page-break-inside: avoid;
+  }
+
+  /* Convert Links to Plain Text */
+  a {
+      color: #000;
+      text-decoration: none;
+  }
+}
+
+
+
+.portfolio-item {
+  margin-bottom: 30px;
+}
+
+.portfolio-item h2 {
+  font-size: 1.5em;
+  color: #00bfa5;
+  margin-bottom: 10px;
+}
+
+.portfolio-item p {
+  font-size: 1em;
+  line-height: 1.6;
+  text-align: justify;
+  color: #555;
+}
+
+.portfolio-item a {
+  display: inline-block;
+  margin-top: 8px;
+  color: #fff;
+  background-color: #333;
+  padding: 8px 16px;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.portfolio-item a:hover {
+  background-color: #00bfa5;
+}
+
+/* Styles for Blog Page */
+
+
+.blog-post {
+  margin-bottom: 30px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.blog-post h2 {
+  font-size: 1.5em;
+  color: #00bfa5;
+  margin-bottom: 10px;
+}
+
+.blog-post p {
+  font-size: 1em;
+  line-height: 1.6;
+  color: #555;
+}
+
+.blog-post em {
+  color: #888;
+}
+
+.blog-post a {
+  display: inline-block;
+  margin-top: 8px;
+  color: #fff;
+  background-color: #333;
+  padding: 8px 16px;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.blog-post a:hover {
+  background-color: #00bfa5;
+}
+.contact-form {
+  margin-top: 20px;
+  padding: 50px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact-form h2 {
+  margin-bottom: 15px;
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.contact-form input, 
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact-form button {
+  padding: 10px 15px;
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: #0056b3;
+}
+
+
+.contact-info {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+.contact-info h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.contact-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.contact-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.contact-item:last-child {
+  border-bottom: none;
+}
+
+.contact-item strong {
+  flex-basis: 120px;
+  color: #555;
+  font-weight: bold;
+}
+
+.contact-item span, .contact-item a {
+  text-align: right;
+  color: #007BFF;
+  text-decoration: none;
+}
+
+.contact-item a:hover {
+  text-decoration: underline;
+}
+

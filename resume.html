@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume - Adzi Purnomo CV</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="print.css" media="print"> <!-- Link to print stylesheet -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <h1>Adzi Purnomo's <span>Resume</span></h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="resume.html" class="active">Resume</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="resume-container">
+        <section class="header">
+            <h1>Adzi Purnomo</h1>
+            <p>+6282281388718 | <a href="mailto:adzypurnomo@gmail.com">adzypurnomo@gmail.com</a></p>
+            <p>Perumahan Permata Land, Blok Ruby 05, Kota Jambi</p>
+        </section>
+
+        <section class="summary">
+            <h2>Summary</h2>
+            <p>Lulusan S1 Teknik Informatika dengan minat dalam pengembangan perangkat lunak di perusahaan teknologi. Memiliki nilai akademis yang baik dan pengalaman kerja sebagai teknisi di perusahaan After Sales Service, yang mengasah keterampilan dalam komunikasi bisnis, administrasi perkantoran, pemeliharaan perangkat teknologi, dan pengolahan data.</p>
+        </section>
+
+        <section class="education">
+            <h2>Pendidikan</h2>
+            <p><strong>Sarjana Teknik Informatika</strong> / IPK 3.78/4.00</p>
+            <ul>
+                <li><strong>Pengembangan Perangkat Lunak:</strong> Menguasai proses perancangan, pemrograman, dan pemeliharaan perangkat lunak.</li>
+                <li><strong>Analisis dan Pengolahan Data:</strong> Berpengalaman dalam teknik pengolahan dan analisis data untuk mendukung pengambilan keputusan.</li>
+                <li><strong>Komunikasi dan Kerja Sama Tim:</strong> Terampil dalam komunikasi verbal dan tertulis serta kolaborasi dalam tim.</li>
+            </ul>
+        </section>
+
+        <section class="experience">
+            <h2>Pengalaman Kerja</h2>
+            <p><strong>PT SITCOMTARA (Mitra Resmi Samsung Electronics Indonesia)</strong></p>
+            <p>Teknisi CE (Consumer Electronics) | Agustus 2017 – Sekarang</p>
+            <ul>
+                <li>Melakukan diagnosis dan perbaikan pada berbagai produk elektronik konsumen yang mengalami kerusakan.</li>
+                <li>Mengganti komponen atau suku cadang yang rusak untuk memastikan perangkat berfungsi kembali dengan optimal.</li>
+                <li>Melakukan instalasi dan konfigurasi produk sesuai standar perusahaan.</li>
+                <li>Memberikan pelatihan dan edukasi kepada pelanggan terkait penggunaan dan perawatan produk.</li>
+            </ul>
+            <p><strong>Produk yang Ditangani:</strong> Televisi Digital, Mesin Cuci, Kulkas, Pendingin Udara, Laptop/Notebook, dan Produk Samsung Lainnya.</p>
+        </section>
+
+        <section class="skills">
+            <h2>Keterampilan</h2>
+            <p><strong>Hard Skills:</strong> Microsoft Office (Word, Excel, PowerPoint), Web Developer (PHP, HTML, JavaScript, Python), Design (Figma, Canva), Arduino (IoT), Video Editing (CapCut, VN, Kine Master)</p>
+            <p><strong>Bahasa:</strong> Bahasa Indonesia (Penutur Asli), Bahasa Inggris (Membaca dan Pemahaman Dasar)</p>
+            <p><strong>Soft Skills:</strong> Bekerja sama, Managemen Waktu, Respon Cepat, Adaptasi, Komunikasi dan Kepemimpinan (Leadership)</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 All rights reserved | Adzi Purnomo</p>
+    </footer>
+    <script>
+        // Check if the URL has the 'print' query parameter
+        const urlParams = new URLSearchParams(window.location.search);
+        if (urlParams.has('print')) {
+            window.print(); // Automatically trigger the print dialog
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lihat Proyek</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link ke file CSS jika ada -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: white; /* Ubah warna teks menjadi putih */
+            padding: 10px; /* Tambahkan padding untuk estetika */
+            border-radius: 8px; /* Membuat sudut melengkung pada latar belakang */
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .gallery-item {
+            position: relative; /* Untuk posisi tooltip */
+            margin: 10px;
+        }
+        .gallery img {
+            width: 800px; /* Atur lebar gambar */
+            height: auto; /* Tinggi otomatis sesuai rasio */
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s; /* Efek transisi saat hover */
+        }
+        .gallery img:hover {
+            transform: scale(1.05); /* Zoom sedikit saat hover */
+        }
+        .tooltip {
+            display: none; /* Sembunyikan tooltip secara default */
+            position: absolute; /* Posisi absolut untuk tooltip */
+            bottom: 100%; /* Tempatkan di atas gambar */
+            left: 50%;
+            transform: translateX(-50%); /* Pindahkan ke tengah */
+            background-color: rgba(0, 0, 0, 0.7); /* Warna latar belakang tooltip */
+            color: white; /* Warna teks tooltip */
+            padding: 5px;
+            border-radius: 4px;
+            white-space: nowrap; /* Jangan pecah baris */
+            z-index: 1; /* Pastikan tooltip di atas gambar */
+        }
+        .gallery-item:hover .tooltip {
+            display: block; /* Tampilkan tooltip saat hover */
+        }
+    </style>
+</head>
+<body>
+    <h1>Galeri Proyek Website</h1>
+    <div class="gallery">
+        <div class="gallery-item">
+            <img src="https://cdn.pixabay.com/photo/2024/11/02/11/13/app-9168735_1280.png" alt="Aplikasi Pelayanan Samsung Service Center">
+            <span class="tooltip">Aplikasi Pelayanan Samsung Service Center</span>
+        </div>
+        <div class="gallery-item">
+            <img src="https://cdn.pixabay.com/photo/2024/11/02/11/15/app-9168736_1280.png" alt="Aplikasi Stok Barang">
+            <span class="tooltip">Aplikasi Stok Barang</span>
+        </div>
+        <div class="gallery-item">
+            <img src="https://cdn.pixabay.com/photo/2024/11/02/03/33/internet-9167994_1280.png" alt="Project Skripsi Smart Garden Berbasis IoT">
+            <span class="tooltip">Project Skripsi Smart Garden Berbasis IoT</span>
+        </div>
+        <!-- Tambahkan lebih banyak gambar sesuai kebutuhan -->
+    </div>
+</body>
+</html>
