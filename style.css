@@ -583,6 +583,26 @@ nav ul li a:hover {
   .contact-form {
     padding: 20px; /* Reduce padding in contact form */
   }
+
+  /* Add styles for portrait orientation */
+  @media screen and (orientation: portrait) {
+    header {
+      flex-direction: column; /* Stack header elements vertically */
+      align-items: center; /* Center align items in header */
+    }
+
+    nav ul {
+      width: auto; /* Adjust nav width */
+    }
+
+    .profile {
+      width: 100%; /* Use full width for profile */
+    }
+
+    .about-info {
+      padding: 10px; /* Reduce padding for about section */
+    }
+  }
 }
 
 /* Media query for small phones */
@@ -631,5 +651,25 @@ nav ul li a:hover {
 
   footer {
     font-size: 0.9em; /* Smaller footer text */
+  }
+
+  /* Add styles for portrait orientation */
+  @media screen and (orientation: portrait) {
+    header {
+      padding: 10px; /* Less padding for header */
+    }
+
+    nav ul {
+      width: 100%; /* Ensure navigation takes full width */
+    }
+
+    .profile {
+      width: 95%; /* Adjust profile width for smaller screens */
+    }
+
+    .about-info {
+      flex-direction: column; /* Keep stacking items vertically */
+      padding: 15px; /* Padding for about section */
+    }
   }
 }
