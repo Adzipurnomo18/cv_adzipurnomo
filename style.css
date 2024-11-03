@@ -542,3 +542,107 @@ nav ul li a:hover {
   text-decoration: underline;
 }
 
+/* Media Queries untuk tampilan mobile */
+@media (max-width: 768px) {
+  /* Layout Umum */
+  body {
+    padding: 10px; /* Mengurangi padding agar lebih sesuai di layar kecil */
+  }
+  
+  .container, main {
+    padding: 20px 10px;
+    margin-top: 60px; /* Mengurangi jarak margin atas untuk layar kecil */
+  }
+
+  /* Header */
+  header {
+    padding: 15px; /* Mengurangi padding header */
+    flex-direction: column; /* Atur layout header ke kolom */
+    align-items: flex-start; /* Align kiri agar lebih rapi di layar kecil */
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  /* Ukuran Heading dan Text */
+  h1 {
+    font-size: 1.8em;
+  }
+
+  h2 {
+    font-size: 1.5em;
+  }
+
+  /* Profile Section */
+  .profile {
+    padding: 15px; /* Mengurangi padding pada profile */
+    margin-bottom: 20px;
+    width: 100%; /* Membuatnya mengambil lebar penuh di layar kecil */
+    max-width: 100%; /* Menghapus batas lebar untuk layar kecil */
+  }
+
+  .profile-image img {
+    width: 80px; /* Mengurangi ukuran gambar profile */
+    height: 80px;
+  }
+
+  .social-links {
+    gap: 5px; /* Mengurangi jarak antara ikon media sosial */
+  }
+
+  /* About dan Info Section */
+  .about-info {
+    flex-direction: column; /* Mengubah layout jadi kolom */
+    padding: 15px;
+  }
+
+  .about, .info {
+    width: 100%; /* Membuat lebar section penuh di layar kecil */
+    padding-right: 0;
+  }
+
+  /* Button */
+  .download-btn {
+    padding: 8px 15px;
+    font-size: 1em;
+    margin-top: 15px;
+  }
+
+  /* Footer */
+  footer {
+    padding: 10px;
+  }
+}
+
+/* Media Query untuk layar yang lebih kecil lagi */
+@media (max-width: 480px) {
+  /* Menyesuaikan ukuran teks untuk layar sangat kecil */
+  h1 {
+    font-size: 1.5em;
+  }
+
+  h2 {
+    font-size: 1.2em;
+  }
+
+  p, li {
+    font-size: 0.9em;
+  }
+
+  .header p {
+    font-size: 0.9em;
+  }
+
+  .social-links li a {
+    font-size: 1.2em; /* Menyesuaikan ukuran ikon media sosial */
+  }
+
+  .download-btn {
+    font-size: 0.9em;
+    padding: 7px 12px;
+  }
+}
