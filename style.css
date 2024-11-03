@@ -542,49 +542,41 @@ nav ul li a:hover {
   text-decoration: underline;
 }
 
-/* Media queries untuk tablet dan smartphone */
+/* Tambahkan padding atas untuk memastikan konten tidak tertutup header */
+body {
+  padding-top: 80px; /* Ini bisa disesuaikan sesuai tinggi header */
+}
+
+/* Media query untuk tablet */
 @media (max-width: 768px) {
   body {
-      font-size: 14px;
-      padding: 10px;
-      padding-top: 70px; /* Memberikan ruang untuk header di layar kecil */
-  }
-
-  header {
-      height: auto;
-      flex-direction: column;
-      align-items: flex-start;
-  }
-
-  header h1 {
-      font-size: 1.2em;
-  }
-
-  header nav ul {
-      flex-direction: column;
-      padding-left: 0;
-  }
-
-  header nav ul li {
-      margin: 10px 0;
-  }
-
-  .container {
-      flex-direction: column;
+    padding-top: 100px; /* Tambahkan ruang ekstra untuk layar tablet */
   }
 }
 
-/* Media queries untuk layar lebih kecil (smartphone) */
+/* Media query untuk layar kecil (smartphone) */
 @media (max-width: 480px) {
   body {
-      font-size: 12px;
+    padding-top: 120px; /* Tambahkan lebih banyak ruang untuk layar lebih kecil */
   }
 
+  /* Atur ulang padding di dalam header untuk layar kecil */
   header {
-      padding: 10px;
+    padding: 15px 10px;
   }
 
-  .item {
-      padding: 15px;
+  /* Atur ulang ukuran font di header untuk layar kecil */
+  header h1 {
+    font-size: 1.5em;
+  }
+
+  nav ul {
+    flex-direction: column; /* Tampilkan menu secara vertikal pada layar kecil */
+    padding-left: 0;
+    width: 100%;
+  }
+
+  nav ul li {
+    margin: 5px 0;
   }
 }
