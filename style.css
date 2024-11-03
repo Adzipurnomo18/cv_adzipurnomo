@@ -542,41 +542,94 @@ nav ul li a:hover {
   text-decoration: underline;
 }
 
-/* Tambahkan padding atas untuk memastikan konten tidak tertutup header */
-body {
-  padding-top: 80px; /* Ini bisa disesuaikan sesuai tinggi header */
-}
-
-/* Media query untuk tablet */
+/* Media query for tablets and larger phones */
 @media (max-width: 768px) {
-  body {
-    padding-top: 100px; /* Tambahkan ruang ekstra untuk layar tablet */
-  }
-}
-
-/* Media query untuk layar kecil (smartphone) */
-@media (max-width: 480px) {
-  body {
-    padding-top: 120px; /* Tambahkan lebih banyak ruang untuk layar lebih kecil */
-  }
-
-  /* Atur ulang padding di dalam header untuk layar kecil */
   header {
-    padding: 15px 10px;
+    padding: 15px 10px; /* Reduce padding for smaller screens */
   }
 
-  /* Atur ulang ukuran font di header untuk layar kecil */
   header h1 {
-    font-size: 1.5em;
+    font-size: 1.8em; /* Slightly smaller font size for the title */
   }
 
   nav ul {
-    flex-direction: column; /* Tampilkan menu secara vertikal pada layar kecil */
-    padding-left: 0;
-    width: 100%;
+    flex-direction: column; /* Stack navigation items vertically */
+    width: 100%; /* Make nav take full width */
+    padding-left: 0; /* Remove padding */
+    align-items: center; /* Center align items */
   }
 
   nav ul li {
-    margin: 5px 0;
+    margin: 5px 0; /* Space between nav items */
+  }
+
+  main {
+    padding: 20px; /* Reduce padding in main content */
+  }
+
+  .profile {
+    padding: 15px; /* Reduce padding */
+    width: 90%; /* Use 90% width for smaller screens */
+  }
+
+  .about-info {
+    flex-direction: column; /* Stack about info items vertically */
+  }
+
+  .download-btn {
+    width: 100%; /* Make buttons full width */
+  }
+
+  .contact-form {
+    padding: 20px; /* Reduce padding in contact form */
+  }
+}
+
+/* Media query for small phones */
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 1.5em; /* Smaller title font size */
+  }
+
+  nav ul {
+    flex-direction: column; /* Stack navigation items vertically */
+  }
+
+  nav ul li {
+    margin: 5px 0; /* Space between nav items */
+    text-align: center; /* Center text in nav items */
+  }
+
+  .profile-image img {
+    width: 80px; /* Smaller profile image */
+    height: 80px; /* Smaller profile image */
+  }
+
+  .profile-details h2 {
+    font-size: 1.2em; /* Smaller name font size */
+  }
+
+  .about h3 {
+    font-size: 1.3em; /* Smaller about section title */
+  }
+
+  p, li {
+    font-size: 0.9em; /* Smaller font for paragraph and list items */
+  }
+
+  .portfolio-item h2 {
+    font-size: 1.3em; /* Smaller portfolio item title */
+  }
+
+  .blog-post h2 {
+    font-size: 1.3em; /* Smaller blog post title */
+  }
+
+  .contact-form button {
+    width: 100%; /* Full-width button */
+  }
+
+  footer {
+    font-size: 0.9em; /* Smaller footer text */
   }
 }
