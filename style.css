@@ -705,3 +705,386 @@ nav ul li a:hover {
     }
   }
 }
+/* Global Font & Layout */
+body {
+  font-family: 'Poppins', Arial, sans-serif;
+  color: #333;
+  background: url('https://cdn.pixabay.com/photo/2020/02/22/17/53/communication-4871245_1280.jpg') no-repeat center center fixed;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+}
+
+/* Tambahkan overlay agar teks lebih jelas */
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3); /* overlay gelap */
+  z-index: -1;
+}
+
+/* Header */
+header {
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 40px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+header h1 {
+  font-size: 1.8em;
+}
+
+header h1 span {
+  color: #00bfa5;
+}
+
+nav ul {
+  display: flex;
+  gap: 25px;
+}
+
+nav ul li a {
+  color: #333;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  transition: 0.3s ease;
+}
+
+nav ul li a:hover {
+  background: #00bfa5;
+  color: #fff;
+}
+
+/* Main Container */
+main {
+  max-width: 900px;
+  margin: 120px auto 50px auto;
+  background: #fff;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+}
+
+/* Section Heading */
+h2 {
+  color: #00bfa5;
+  font-size: 1.8em;
+  margin-bottom: 15px;
+  border-bottom: 3px solid #00bfa5;
+  display: inline-block;
+  padding-bottom: 6px;
+}
+
+/* Text Paragraph */
+p {
+  color: #555;
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+
+/* List */
+ul {
+  margin-left: 20px;
+  line-height: 1.7;
+}
+
+/* Button */
+.download-btn {
+  display: inline-block;
+  padding: 12px 25px;
+  background: #00bfa5;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.download-btn:hover {
+  background: #008f7a;
+}
+@media print {
+  /* Sembunyikan header, footer, dan elemen yang tidak perlu */
+  header, nav, footer {
+    display: none !important;
+  }
+
+  /* Hanya tampilkan main content */
+  main {
+    width: 100%;
+    max-width: none;
+    box-shadow: none;
+    background: #fff;
+    margin: 0;
+    padding: 0;
+  }
+
+  /* Hilangkan background body */
+  body {
+    background: #fff !important;
+  }
+
+  /* Sesuaikan ukuran font agar terlihat rapi */
+  h1, h2, h3 {
+    color: #000;
+  }
+
+  a {
+    color: #000;
+    text-decoration: none;
+  }
+
+  /* Hilangkan margin halaman */
+  @page {
+    margin: 10mm;
+  }
+}
+/* === Penyesuaian Alignment untuk Bagian Keterampilan === */
+.skills {
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.skills h2 {
+  text-align: left;
+  margin-left: 0;
+}
+
+.skills ul {
+  margin-left: 20px; /* sama dengan list di bagian lain */
+}
+/* === Konsistensi Layout Semua Section === */
+main section {
+  width: 100%;
+  margin-bottom: 30px;
+}
+/* === Spacing di Bagian Keterampilan === */
+.skills ul li {
+  margin-bottom: 5px; /* Spasi antar bullet point */
+}
+
+.skills p,
+.skills strong {
+  margin-bottom: 12px; /* Spasi bawah untuk teks paragraf dan judul kategori */
+  display: block; /* Pastikan berlaku meskipun strong */
+}
+/* === RESET === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* === GLOBAL STYLES === */
+body {
+  font-family: 'Poppins', Arial, sans-serif;
+  color: #333;
+  background: url('https://cdn.pixabay.com/photo/2020/02/22/17/53/communication-4871245_1280.jpg') no-repeat center center fixed;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+}
+
+/* Overlay agar teks lebih jelas */
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: -1;
+}
+
+/* === HEADER === */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 40px;
+  background: #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+header h1 {
+  font-size: 1.8em;
+}
+
+header h1 span {
+  color: #00bfa5;
+}
+
+/* === NAVIGATION === */
+nav ul {
+  display: flex;
+  gap: 25px;
+  list-style: none;
+}
+
+nav ul li a {
+  color: #333;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  transition: 0.3s ease;
+}
+
+nav ul li a:hover {
+  background: #00bfa5;
+  color: #fff;
+}
+
+/* === MAIN CONTAINER === */
+main {
+  max-width: 900px;
+  margin: 120px auto 50px auto;
+  background: #fff;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+}
+
+/* === SECTION HEADING === */
+h2 {
+  color: #00bfa5;
+  font-size: 1.8em;
+  margin-bottom: 15px;
+  border-bottom: 3px solid #00bfa5;
+  display: inline-block;
+  padding-bottom: 6px;
+}
+
+/* === PARAGRAPH === */
+p {
+  color: #555;
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+
+/* === LIST === */
+ul {
+  margin-left: 20px;
+  line-height: 1.7;
+}
+
+/* === BUTTON === */
+.download-btn {
+  display: inline-block;
+  padding: 12px 25px;
+  background: #00bfa5;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.download-btn:hover {
+  background: #008f7a;
+}
+
+/* === KETERAMPILAN (RESUME SECTION) === */
+.skills {
+  margin-top: 20px;
+}
+
+.skills h3 {
+  font-size: 1.2em;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.skills strong {
+  display: block;
+  color: #00bfa5;
+  margin-bottom: 8px;
+}
+
+.skills ul {
+  margin-left: 20px;
+  margin-bottom: 15px;
+}
+
+.skills ul li {
+  margin-bottom: 6px;
+}
+
+/* === FOOTER === */
+footer {
+  text-align: center;
+  padding: 20px;
+  color: #333;
+  margin-top: 40px;
+}
+
+/* === RESPONSIVE === */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    padding: 15px;
+  }
+
+  header h1 {
+    font-size: 1.6em;
+    margin-bottom: 10px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  main {
+    margin: 100px 10px;
+    padding: 20px;
+  }
+}
+
+/* === PRINT MODE === */
+@media print {
+  header, nav, footer {
+    display: none !important;
+  }
+
+  main {
+    width: 100%;
+    max-width: none;
+    background: #fff;
+    margin: 0;
+    padding: 0;
+    box-shadow: none;
+  }
+
+  body {
+    background: #fff !important;
+  }
+
+  h1, h2, h3 {
+    color: #000;
+  }
+
+  a {
+    color: #000;
+    text-decoration: none;
+  }
+
+  @page {
+    margin: 10mm;
+  }
+}
