@@ -5,7 +5,6 @@
   box-sizing: border-box;
 }
 
-
 header { 
   position: fixed; /* Fixes the header at the top */
   top: 0;
@@ -1183,4 +1182,12 @@ footer {
     .nav-links.show {
         display: flex;
     }
+}
+/* === Navbar Auto Hide === */
+header {
+  transition: top 0.3s ease-in-out; /* Animasi saat sembunyi/tampil */
+}
+
+header.hide {
+  top: -100px; /* Sembunyikan header ke atas */
 }

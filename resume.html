@@ -11,7 +11,7 @@
 </head>
 <body>
 
-    <header>
+    <header class="navbar">
         <h1>Adzi Purnomo's <span>Resume</span></h1>
         <nav>
             <ul>
@@ -114,5 +114,23 @@
             window.print(); // Automatically trigger the print dialog
         }
     </script>
+    <script>
+  let prevScrollPos = window.pageYOffset;
+  const navbar = document.querySelector("header");
+
+  window.addEventListener("scroll", function() {
+    let currentScrollPos = window.pageYOffset;
+    
+    if (prevScrollPos > currentScrollPos) {
+      // Scroll ke atas -> Navbar tampil
+      navbar.classList.remove("hide");
+    } else {
+      // Scroll ke bawah -> Navbar sembunyi
+      navbar.classList.add("hide");
+    }
+    prevScrollPos = currentScrollPos;
+  });
+</script>
+
 </body>
 </html>

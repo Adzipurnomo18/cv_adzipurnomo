@@ -79,4 +79,22 @@
                 <!-- Tambahkan lebih banyak gambar sesuai kebutuhan -->
     </div>
 </body>
+<script>
+  let prevScrollPos = window.pageYOffset;
+  const navbar = document.querySelector("header");
+
+  window.addEventListener("scroll", function() {
+    let currentScrollPos = window.pageYOffset;
+    
+    if (prevScrollPos > currentScrollPos) {
+      // Scroll ke atas -> Navbar tampil
+      navbar.classList.remove("hide");
+    } else {
+      // Scroll ke bawah -> Navbar sembunyi
+      navbar.classList.add("hide");
+    }
+    prevScrollPos = currentScrollPos;
+  });
+</script>
+
 </html>
