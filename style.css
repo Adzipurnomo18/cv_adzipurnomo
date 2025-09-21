@@ -5,6 +5,16 @@
   box-sizing: border-box;
 }
 
+/* Efek hide navbar saat scroll */
+header {
+  transition: top 0.3s ease-in-out;
+}
+
+header.hide {
+  top: -100px; /* Sesuaikan dengan tinggi navbar */
+}
+
+
 header { 
   position: fixed; /* Fixes the header at the top */
   top: 0;
